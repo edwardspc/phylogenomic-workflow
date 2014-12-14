@@ -5,14 +5,13 @@ This is an ongoing project porting **SciPhylomics Workflow** to be deployed on H
 ## Part 1: SciPhy Workflow
 
 ### Dependencies
-#### MAFFT
+#### [MAFFT] (http://mafft.cbrc.jp/alignment/software/linux.html)
 ```bash
 $ wget http://mafft.cbrc.jp/alignment/software/mafft-7.205-gcc_fc6.x86_64.rpm
 $ sudo rpm -Uvh mafft-7.205-gcc_fc6.x86_64.rpm
 ```
-[mafft] (http://mafft.cbrc.jp/alignment/software/linux.html)
 
-#### RAxML
+#### [RAxML] (https://github.com/stamatak/standard-RAxML)
 ```bash
 $ git clone https://github.com/stamatak/standard-RAxML.git
 $ cd standard-RAxML
@@ -21,7 +20,6 @@ $ echo "export RAXMLHPC_HOME=`pwd`" >> ~/.bashrc
 $ source ~/.bashrc
 $ sudo ln -s $RAXMLHPC_HOME/raxmlHPC /usr/local/bin/raxmlHPC
 ```
-[raxml] (https://github.com/stamatak/standard-RAxML)
 
 #### Hadoop
 To get an easy deployment we suggest to experiment with [Pivotal HD 2.1.0 Single Node VM](https://network.pivotal.io/products/pivotal-hd).
