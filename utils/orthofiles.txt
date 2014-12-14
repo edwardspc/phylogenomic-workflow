@@ -1,0 +1,4 @@
+/user/hdfs/workflow-sciphy/datasets/ORTHOMCL256
+/user/hdfs/workflow-sciphy/datasets/ORTHOMCL257
+/user/hdfs/workflow-sciphy/datasets/ORTHOMCL258
+/user/hdfs/workflow-sciphy/datasets/ORTHOMCL259

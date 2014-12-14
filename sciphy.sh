@@ -5,7 +5,12 @@ SCRIPTS=$SCIPHY_HOME/scripts
 JAR=$SCIPHY_HOME/jar
 DATASET=$SCIPHY_HOME/datasets
 OUTPUT="output"
-dataset_files=( $(ls datasets) )
+
+if [ -n "$1" ]; then
+  dataset_files=$1
+else
+  dataset_files=( $(ls datasets) )
+fi
 
 for i in "${dataset_files[@]}"
 do
@@ -22,10 +27,9 @@ do
 
   java -jar $JAR/readseq.jar -all -f=12 $OUTPUT_HOME/$INPUT_FILE.mafft -o $OUTPUT_HOME/$INPUT_FILE.phylip > /dev/null
 
-  rm -rf  $OUTPUT_HOME/modelgenerator*.out > /dev/null
-  java -jar $JAR/modelgenerator.jar $OUTPUT_HOME/$INPUT_FILE.phylip 6 > /dev/null
-  mv modelgenerator*.out $OUTPUT_HOME/$INPUT_FILE.mg
-  mv $INPUT_FILE.phylip_* $OUTPUT_HOME
+  cd $OUTPUT_HOME
+  java -jar $JAR/modelgenerator.jar $INPUT_FILE.phylip 6 > /dev/null
+  mv modelgenerator*.out $INPUT_FILE.mg
 
   python $SCRIPTS/clean_modelgenerator.py $OUTPUT_HOME/$INPUT_FILE.mg
 
