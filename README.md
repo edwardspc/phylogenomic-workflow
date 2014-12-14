@@ -28,7 +28,6 @@ To get an easy deployment we suggest to experiment with [Pivotal HD 2.1.0 Single
 ```bash
 su - hdfs -c "hadoop jar /usr/lib/gphd/hadoop-mapreduce/hadoop-streaming-2.2.0-gphd-3.1.0.0.jar -numReduceTasks 0 -mapper sciphy-map.sh -input /user/hdfs/workflow-sciphy/orthofiles.txt -output /user/hdfs/workflow-sciphy/output1 -file /home/gpadmin/Projects/phylogenomic-workflow/hadoop/sciphy-map.sh"
 ```
-text
 
 #### Contributors
 * Kary Ocaña
