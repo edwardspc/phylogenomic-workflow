@@ -1,10 +1,8 @@
-SciPhylomic Workflow deployed on Hadoop
----------------------------------------
+Phylogenomic Workflow deployed on Hadoop
+----------------------------------------
 This is an ongoing project porting SciPhylomic Workflow to be deployed on Hadoop.
 
-## Part 1:
-
-SciPhy Scientifc Workflow
+## Part 1: SciPhy Workflow
 -------------------------
 
 Dependencies
