@@ -5,6 +5,7 @@ This is an ongoing project porting **SciPhylomics Workflow** to be deployed on H
 ## Part 1: SciPhy Workflow
 
 ### Dependencies
+-----------------
 1. [MAFFT] (http://mafft.cbrc.jp/alignment/software/linux.html)
 ```bash
 $ wget http://mafft.cbrc.jp/alignment/software/mafft-7.205-gcc_fc6.x86_64.rpm
