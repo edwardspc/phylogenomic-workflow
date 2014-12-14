@@ -3,7 +3,6 @@ Phylogenomic Workflow deployed on Hadoop
 This is an ongoing project porting SciPhylomic Workflow to be deployed on Hadoop.
 
 ## Part 1: SciPhy Workflow
--------------------------
 
 Dependencies
 ------------
@@ -32,6 +31,11 @@ https://github.com/stamatak/standard-RAxML
 Example SciPhy
 ---------------
 $ ./sciphy.sh
+
+Contributors
+------------
+* Kary Ocaña
+* Edward Pacheco
 
 Reference
 ---------
